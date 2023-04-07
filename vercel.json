@@ -1,0 +1,7 @@
+{
+    "functions": {
+        "pages/api/**/*.py": {
+            "runtime": "python3.9@0.4.2"
+        }
+    }
+}
