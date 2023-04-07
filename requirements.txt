@@ -1,0 +1,4 @@
+Flask==2.1.1
+langchain==0.6.3
+pinecone-client==0.10.1
+openai==0.27.0
