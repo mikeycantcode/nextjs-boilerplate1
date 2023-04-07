@@ -3,5 +3,15 @@
         "pages/api/**/*.py": {
             "runtime": "python3.9@0.4.2"
         }
-    }
+    },
+    "routes": [
+        {
+            "src": "/api/upload",
+            "dest": "/pages/api/upload"
+        },
+        {
+            "src": "/api/chat",
+            "dest": "/pages/api/chat"
+        }
+    ]
 }

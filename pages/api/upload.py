@@ -1,6 +1,7 @@
 # pages/api/upload.py
 import os
-from flask import Flask, request
+from http import HTTPStatus
+from flask import Flask, request, jsonify
 from langchain.document_loaders import PyPDFLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.vectorstores import Pinecone, Chroma
@@ -47,7 +48,5 @@ def upload_files():
     for chunks in chunked_annual_reports:
         Pinecone.from_texts([chunk.page_content for chunk in chunks], embeddings, index_name=index_name)
 
-    return {"message": "Files uploaded and processed successfully!"}, 200
+    return {"message": "Files uploaded and processed successfully!"}, HTTPStatus.OK
 
-if __name__ == "__main__":
-    app.run(debug=True)
