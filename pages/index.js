@@ -17,93 +17,65 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="../public/styles.css" />
       </Head>
-      <body class="bg-gradient-to-br from-gray-100 to-yellow-50 text-gray-900">
-        <main class="h-full">
-          <div class="text-gray-900">
-            <p>
-              Get started by editing&nbsp;
-              <code className={styles.code}>pages/index.js</code>
-            </p>
-            <div>
-              Powered By {'Vercel'}
-              <SignIn />
+      <main class="bg-gradient-to-br from-gray-900 to-slate-90 text-gray-900">
+        <div class="text-gray-100">
+          <p>
+            Get started by editing&nbsp;
+            <code className={styles.code}>pages/index.js</code>
+          </p>
+          <div>
+            Powered By {'Vercel'}
+            <SignIn />
+          </div>
+        </div>
+        <div class="relative flex flex-col items-center justify-center h-screen">
+          <img src="https://www.publicdomainpictures.net/pictures/270000/velka/grid-graph-paper-background.jpg" alt="Logo" class="w-full opacity-10 h-full absolute inset-0 z-0" />
+          <div class="z-10 text-center">
+            <h1 class="col-start-1 row-start-2 mt-4 max-w-[36rem] text-4xl font-extrabold tracking-tight text-slate-900 sm:text-7xl xl:max-w-[43.5rem]">Talk to your documents.</h1>
+            <p class="col-start-1 row-start-3 mt-4 max-w-lg text-lg text-slate-700">Stop sifting through pages. </p>
+            <p class="col-start-1 row-start-3 mt-4 max-w-lg text-lg text-slate-700">Let your data speak to you.</p>
+            <SignIn class="py-10   px-10 w-50 h-50 p bg-blue-500 text-white-100 rounded-lg " />
+          </div>
+        </div>
+
+
+
+      </main>
+      <main class="z-10">
+        <section class="bg-gradient-to-br from-slate-900 to-gray-900 z-10 flex items-center justify-between py-20">
+          <div class="max-w-2xl text-white pl-16">
+            <h1 class="text-6xl font-bold mb-6">Give your documents a superpower</h1>
+            <p class="text-xl leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend justo vel risus bibendum, quis sollicitudin lacus convallis. Nulla facilisi. Donec vel ex quis velit sagittis convallis. Etiam lobortis, sapien nec dapibus euismod, ipsum nulla suscipit est, ac consequat quam lectus in ex.</p>
+          </div>
+          <div class="relative flex items-center justify-center">
+            <div class="w-1/2">
+              <svg class="document" viewBox="0 0 400 400">
+                <path class="document-outline stroke-current stroke-2" d="M 100 50 h 200 v 300 h -200 v -300" />
+                <path class="document-fill stroke-current stroke-2 fill-transparent" d="M 110 60 h 180 v 280 h -180 v -280" />
+              </svg>
             </div>
           </div>
-          <div class="relative flex flex-col items-center justify-center h-screen">
-            <img src="https://www.publicdomainpictures.net/pictures/270000/velka/grid-graph-paper-background.jpg" alt="Logo" class="w-full opacity-10 h-auto absolute inset-0 z-0" />
-            <div class="z-10 text-center">
-              <h1 class="text-5xl py-4 font-serif">Talk to your documents.</h1>
-              <h2 class="text-lg font-serif">Stop sifting through pages.</h2>
-              <h2 class="text-lg font-serif">Let your data speak to you.</h2>
-              <h2 class="text-2xl font-serif">Try Taldoc.</h2>
-            </div>
-          </div>
+        </section>
+        <style>
+          {`
+          @keyframes fill {
+            to {
+              stroke-dasharray: 800;
+              stroke-dashoffset: 0;
+              fill: #fff;
+            }
+          }
 
+          .document-fill {
+            stroke-dasharray: 800;
+            stroke-dashoffset: 800;
+            animation: fill 4s ease-in-out forwards;
+          }
+        `}
+        </style>
 
-          <div className={styles.center}>
+      </main>
 
-          </div>
-
-          <div className={styles.grid}>
-            <a
-              href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              className={styles.card}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <h2 className={inter.className}>
-                Docs <span>-&gt;</span>
-              </h2>
-              <p className={inter.className}>
-                Find in-depth information about Next.js features and&nbsp;API.
-              </p>
-            </a>
-
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              className={styles.card}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <h2 className={inter.className}>
-                Learn <span>-&gt;</span>
-              </h2>
-              <p className={inter.className}>
-                Learn about Next.js in an interactive course with&nbsp;quizzes!
-              </p>
-            </a>
-
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              className={styles.card}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <h2 className={inter.className}>
-                Templates <span>-&gt;</span>
-              </h2>
-              <p className={inter.className}>
-                Discover and deploy boilerplate example Next.js&nbsp;projects.
-              </p>
-            </a>
-
-            <a
-              href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              className={styles.card}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <h2 className={inter.className}>
-                Deploy <span>-&gt;</span>
-              </h2>
-              <p className={inter.className}>
-                Instantly deploy your Next.js site to a shareable URL
-                with&nbsp;Vercel.
-              </p>
-            </a>
-          </div>
-        </main>
-      </body>
     </>
   )
 }

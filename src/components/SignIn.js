@@ -4,22 +4,6 @@ import { auth } from "../firebase";
 import styled from 'styled-components';
 
 
-const SignInButton = styled.button`
-  background-color: #306bcf;
-  border: 1px solid #205bbf;
-  border-radius: 6px;
-  color: #fff;
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: bold;
-  padding: 12px 24px;
-  transition: background-color 0.3s ease;
-
-  &:hover {
-    background-color: #111;
-  }
-`;
-
 const SignIn = () => {
     const signInWithGoogle = async () => {
         const provider = new GoogleAuthProvider();
@@ -32,9 +16,10 @@ const SignIn = () => {
 
     return (
         <div>
-            <SignInButton class="px-5 py-5 bg-blue-500" onClick={signInWithGoogle}>
+            <button class="px-10 py-4 bg-blue-500 text-white text-lg text-semibold rounded-full" onClick={signInWithGoogle}>
                 Sign in with Google
-            </SignInButton>
+            </button>
+
         </div>
     );
 };
