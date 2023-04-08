@@ -32,7 +32,7 @@ const SignIn = () => {
 
     return (
         <div>
-            <SignInButton onClick={signInWithGoogle}>
+            <SignInButton class="px-5 py-5 bg-blue-500" onClick={signInWithGoogle}>
                 Sign in with Google
             </SignInButton>
         </div>
