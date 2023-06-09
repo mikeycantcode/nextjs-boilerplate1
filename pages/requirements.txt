@@ -1,0 +1,2 @@
+twilio==6.63.5
+transformers==4.9.2
