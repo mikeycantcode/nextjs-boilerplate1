@@ -4,7 +4,7 @@ import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import SignIn from "../src/components/SignIn";
 import graph1 from '../public/graph1.png';
-
+import TypeWriter from "typewriter-effect"
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -17,35 +17,47 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="../public/styles.css" />
       </Head>
-      <main class="bg-gradient-to-br from-gray-900 to-slate-90 text-gray-900">
-        <div class="text-gray-100">
-          <p>
-            Get started by editing&nbsp;
-            <code className={styles.code}>pages/index.js</code>
-          </p>
-          <div>
-            Powered By {'Vercel'}
-            <SignIn />
-          </div>
-        </div>
+      <main class="bg-gradient-to-b from-slate-950 to-slate-700">
         <div class="relative flex flex-col items-center justify-center h-screen">
           <img src="https://www.publicdomainpictures.net/pictures/270000/velka/grid-graph-paper-background.jpg" alt="Logo" class="w-full opacity-10 h-full absolute inset-0 z-0" />
-          <div class="z-10 text-center">
-            <h1 class="col-start-1 row-start-2 mt-4 max-w-[36rem] text-4xl font-extrabold tracking-tight text-slate-900 sm:text-7xl xl:max-w-[43.5rem]">Talk to your documents.</h1>
-            <p class="col-start-1 row-start-3 mt-4 max-w-lg text-lg text-slate-700">Stop sifting through pages. </p>
-            <p class="col-start-1 row-start-3 mt-4 max-w-lg text-lg text-slate-700">Let your data speak to you.</p>
-            <SignIn class="py-10   px-10 w-50 h-50 p bg-blue-500 text-white-100 rounded-lg " />
+          <div class="z-10 text-center mt-20">
+            <h1 class="col-start-1 row-start-2 mt-4 max-w-[36rem] text-4xl font-extrabold tracking-tight text-slate-400 sm:text-7xl xl:max-w-[43.5rem]">
+              Create a &nbsp;
+              <div class="inline-block">
+                <div class="text-4xl font-extrabold tracking-tight text-pink-500 sm:text-7xl xl:max-w-[43.5rem]">
+                  <TypeWriter
+                    onInit={(typewriter) => {
+                      typewriter.typeString("significant other").pauseFor(2000).deleteAll().typeString("companion").pauseFor(2000).deleteAll().typeString("friend").start();
+                    }}
+                  />
+                </div>
+              </div>
+            </h1>
+            <p class="text-gray-500 mt-4">"Loneliness is a temporary condition, while a companion is forever. - Carl Jung"</p>
+            <div class="mt-8">
+              <SignIn class="py-2 px-8 bg-gradient-to-br from-pink-500 to-pink-400 text-white rounded-lg">Sign In With Google</SignIn>
+            </div>
+            <div class="mt-8">
+              <button class="py-2 px-16 bg-gradient-to-br text-white rounded-lg">Read More</button>
+            </div>
           </div>
         </div>
-
-
-
+        <div class="flex justify-around absolute bg-inherited top-5 left-0 w-full z-20">
+        </div>
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 animate-bounce" viewBox="0 0 24 24" stroke="currentColor" fill="none" strokeWidth="2">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M5 10l7 7m0 0l7-7m-7 7V3"></path>
+          </svg>
+        </div>
       </main>
+
+
+
       <main class="z-10">
-        <section class="bg-gradient-to-br from-slate-900 to-gray-900 z-10 flex items-center justify-between py-20">
+        <section class="bg-slate-500 z-10 flex items-center justify-between py-20">
           <div class="max-w-2xl text-white pl-16">
-            <h1 class="text-6xl font-bold mb-6">Give your documents a superpower</h1>
-            <p class="text-xl leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eleifend justo vel risus bibendum, quis sollicitudin lacus convallis. Nulla facilisi. Donec vel ex quis velit sagittis convallis. Etiam lobortis, sapien nec dapibus euismod, ipsum nulla suscipit est, ac consequat quam lectus in ex.</p>
+            <h1 class="text-6xl font-bold mb-6">Your Relationship. Your Phone Number.</h1>
+            <p class="text-xl leading-relaxed">We all experience moments of solitude. Introducing a revolutionary service that elevates your communication with an AI companion to an entirely new realm. Our cutting-edge platform enables you to effortlessly exchange text messages and make phone calls with your AI companion, all while utilizing your existing phone number.</p>
           </div>
           <div class="relative flex items-center justify-center">
             <div class="w-1/2">
@@ -73,6 +85,39 @@ export default function Home() {
           }
         `}
         </style>
+        <section class="bg-gradient-to-l from-slate-200 to-gray-200 z-10 flex items-center justify-between py-20 text-center">
+          <div class="max-w-2xl text-slate-950 pl-16 mx-auto">
+            <h1 class="text-6xl font-bold mb-6">Start with a free trial. Then pay only for the time you use.</h1>
+            <p class="text-xl lagging-relaxed">
+              Discover a whole new level of convenience with our flexible payment system. With our free trial, you can get started right away and experience the benefits firsthand. No need to commit to a long-term plan or pay upfront. Instead, you'll only be charged for the time you actually use our service. It's a hassle-free and cost-effective way to access the features you need, when you need them.</p>
+          </div>
+          <div class="relative flex items-center justify-center">
+            <div class="w-1/2">
+              <svg class="document" viewBox="0 0 400 400">
+                <path class="document-outline stroke-current stroke-2" d="M 100 50 h 200 v 300 h -200 v -300" />
+                <path class="document-fill stroke-current stroke-2 fill-transparent" d="M 110 60 h 180 v 280 h -180 v -280" />
+              </svg>
+            </div>
+          </div>
+        </section>
+        <style>
+          {`
+  @keyframes fill {
+    to {
+      stroke-dasharray: 800;
+      stroke-dashoffset: 0;
+      fill: #fff;
+    }
+  }
+
+  .document-fill {
+    stroke-dasharray: 800;
+    stroke-dashoffset: 800;
+    animation: fill 4s ease-in-out forwards;
+  }
+`}
+        </style>
+
 
       </main>
 
