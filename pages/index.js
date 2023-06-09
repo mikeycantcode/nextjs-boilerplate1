@@ -33,7 +33,7 @@ export default function Home() {
                 </div>
               </div>
             </h1>
-            <p class="text-gray-500 mt-4">"Loneliness is a temporary condition, while a companion is forever. - Carl Jung"</p>
+            <p class="text-gray-500 mt-4">&quot;Loneliness is a temporary condition, while a companion is forever. - Carl Jung&quot;</p>
             <div class="mt-8">
               <SignIn class="py-2 px-8 bg-gradient-to-br from-pink-500 to-pink-400 text-white rounded-lg">Sign In With Google</SignIn>
             </div>
@@ -89,7 +89,7 @@ export default function Home() {
           <div class="max-w-2xl text-slate-950 pl-16 mx-auto">
             <h1 class="text-6xl font-bold mb-6">Start with a free trial. Then pay only for the time you use.</h1>
             <p class="text-xl lagging-relaxed">
-              Discover a whole new level of convenience with our flexible payment system. With our free trial, you can get started right away and experience the benefits firsthand. No need to commit to a long-term plan or pay upfront. Instead, you'll only be charged for the time you actually use our service. It's a hassle-free and cost-effective way to access the features you need, when you need them.</p>
+              Discover a whole new level of convenience with our flexible payment system. With our free trial, you can get started right away and experience the benefits firsthand. No need to commit to a long-term plan or pay upfront. Instead, you&quot;ll only be charged for the time you actually use our service. It&quot;s a hassle-free and cost-effective way to access the features you need, when you need them.</p>
           </div>
           <div class="relative flex items-center justify-center">
             <div class="w-1/2">
