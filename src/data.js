@@ -21,5 +21,4 @@ const jsonData = {
     trait6: 0.7
 };
 
-
-module.exports = jsonData;
+export default jsonData;

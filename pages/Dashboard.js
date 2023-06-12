@@ -1,9 +1,9 @@
 import React, { useEffect, useRef } from 'react';
 import Chart from 'chart.js/auto';
-import personalityGraphData from "./data.js";
+import jsonData from "../src/data.js";
 import { useState } from 'react';
 
-const jsonData = require('./data.js');
+
 
 const StartContent = () => {
     return (
@@ -68,8 +68,8 @@ const CurrentTierContent = () => {
     return (
         <div
             className={`w-1/4 bg-zinc-50 rounded-xl shadow-lg p-4 z-10 transition-all duration-300 transform-gpu ${hovered
-                    ? 'hover:bg-zinc-950 hover:text-white hover:scale-105'
-                    : 'hover:bg-blue-500 hover:text-white'
+                ? 'hover:bg-zinc-950 hover:text-white hover:scale-105'
+                : 'hover:bg-blue-500 hover:text-white'
                 }`}
             id="currentTier"
             onMouseEnter={handleHover}
