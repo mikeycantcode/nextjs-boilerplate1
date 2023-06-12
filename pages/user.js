@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { AuthContext } from '../src/AuthContext';
-import Toolbar from '../src/components/Toolbar';
+import Toolbar from './Toolbar';
+import Dashboard from './Dashboard';
 
 const UserPage = () => {
     const user = useContext(AuthContext);
@@ -11,8 +12,17 @@ const UserPage = () => {
     }
 
     return (
-        <div className="flex" style={{ backgroundColor: '#555555' }}>
+        <div className="flex bg-zinc-200">
+            <img
+                src="https://img.freepik.com/free-vector/white-background-with-zigzag-pattern-design_1017-33197.jpg?w=2000&t=st=1686514649~exp=1686515249~hmac=834d6e3511f28271750ad517cfb849d6268e5f2715178e630d32f2b51f5e2b2c"
+                alt="Logo"
+                class="w-full opacity-10 h-full absolute inset-0 z-1"
+            />
+            {/* Toolbar start */}
             <Toolbar />
+            {/* Toolbar end */}
+
+            {/* Main Content */}
             <div className="w-4/5 p-4">
                 {/* User-specific content */}
                 <div className="flex items-center justify-end mb-4">
@@ -23,21 +33,9 @@ const UserPage = () => {
                 </div>
 
                 {/* Dashboard section */}
-                <div className="mb-4 mt-4 ml-4">
-                    <h1 className="text-2xl font-bold">Dashboard</h1>
-                    <div className="flex flex-col mt-2">
-                        <div className="bg-white rounded-lg shadow-md px-6 py-4 mb-4">
-                            <div className="flex items-center mb-2">
-                                <div className="bg-slate-100 rounded-full px-3 py-1 shadow-md">
-                                    <span className="text-gray-900">Currently running:</span>
-                                </div>
-                            </div>
-                            {/* Content for "Currently running" pill box */}
-                        </div>
-                        {/* Rest of the content */}
-                    </div>
+                <div class="z-10">
+                    <Dashboard />
                 </div>
-
                 {/* Rest of the content */}
             </div>
         </div>

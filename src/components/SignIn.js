@@ -19,8 +19,8 @@ const SignIn = () => {
     return (
         <div>
             <div>
-                <button className="py-2 px-8 bg-gradient-to-br from-pink-500 to-pink-400 text-white rounded-lg" onClick={signInWithGoogle}>
-                    Sign in with Google
+                <button className="py-2 px-8 bg-gradient-to-br from-pink-500 to-pink-400 hover:scale-105 text-white rounded-lg" onClick={signInWithGoogle}>
+                    Sign in with Google (ADMIN LOGIN)
                 </button>
             </div>
         </div>
