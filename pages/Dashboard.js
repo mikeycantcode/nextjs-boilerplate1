@@ -2,16 +2,13 @@ import React, { useEffect, useRef } from 'react';
 import Chart from 'chart.js/auto';
 import jsonData from "../src/data.js";
 import { useState } from 'react';
+import StartContent from "./StartContent"
 
 
 
-const StartContent = () => {
-    return (
-        <div className="w-3/5 bg-zinc-50 rounded-xl shadow-lg p-4 z-10 hover:scale-105 transition-transform duration-300" id="start">
-            {/* Start Content */}
-        </div>
-    );
-};
+
+
+
 
 const GraphContent = () => {
     const chartRef = useRef(null);

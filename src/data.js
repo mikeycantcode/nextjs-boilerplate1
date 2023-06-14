@@ -12,13 +12,6 @@ CURRENTLY IS MOCKUP BUT THE FUNCTIONS (APIS WILL BE HERE)
 
 //personality graph data
 
-const jsonData = {
-    trait1: 0.2,
-    trait2: 0.3,
-    trait3: 0.1,
-    trait4: 0.4,
-    trait5: 0.5,
-    trait6: 0.7
-};
+const jsonData = { "extroversion": 0.6, "agreeableness": 0.1, "openness": 0.5, "neurotism": 0.4, "feistyness": 0.3, "intelligence": 0.2 }
 
 export default jsonData;

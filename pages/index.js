@@ -1,3 +1,4 @@
+import React from 'react';
 import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
@@ -19,7 +20,9 @@ export default function Home() {
       </Head>
       <main class="bg-gradient-to-b from-slate-50 to-slate-200">
         <div class="relative flex flex-col items-center justify-center h-screen">
-          <img src="https://img.freepik.com/free-vector/white-background-with-zigzag-pattern-design_1017-33197.jpg?w=2000&t=st=1686514649~exp=1686515249~hmac=834d6e3511f28271750ad517cfb849d6268e5f2715178e630d32f2b51f5e2b2c" alt="Logo" class="w-full opacity-10 h-full absolute inset-0 z-0" />
+          <img
+            src="https://img.freepik.com/free-photo/pink-yellow-plain-background_53876-98329.jpg?w=2000&t=st=1686723444~exp=1686724044~hmac=73251b93da729ddc3c35c0b12076468925174e1389b588626cb43a70fab86ed3"
+            alt="Logo" class="w-full opacity-20 h-full absolute inset-0 z-0" />
           <div class="z-10 text-center mt-20">
             <h1 class="col-start-1 row-start-2 mt-4 max-w-[36rem] text-4xl font-extrabold tracking-tight text-slate-400 sm:text-7xl xl:max-w-[43.5rem]">
               Create a &nbsp;
