@@ -3,12 +3,11 @@ import { AuthContext } from '../src/AuthContext';
 import Toolbar from './Toolbar';
 import Dashboard from './Dashboard';
 import M12 from './manageJoi';
-import AnimateRoute from './AnimateRoute';
 import {
     BrowserRouter as Router, Route, Routes, useParams,
     useRouteMatch
 } from 'react-router-dom';
-
+import M72 from './payment';
 
 const UserPage = () => {
     console.log(Routes)
@@ -43,14 +42,13 @@ const UserPage = () => {
 
                     {/* Dashboard section */}
                     <div class="z-10">
-                        <AnimateRoute>
-                            <Routes>
-                                <Route path="/user" element={<Dashboard />} />
-                                <Route path="/dashboard" element={<Dashboard />} />
-                                <Route path="/manage-joi" element={<M12 />} />
-                                {/* Add more routes as needed */}
-                            </Routes>
-                        </AnimateRoute>
+                        <Routes>
+                            <Route path="/user" element={<Dashboard />} />
+                            <Route path="/dashboard" element={<Dashboard />} />
+                            <Route path="/manage-joi" element={<M12 />} />
+                            <Route path="/payment" element={<M72 />} />
+                            {/* Add more routes as needed */}
+                        </Routes>
 
                     </div>
                     {/* Rest of the content */}

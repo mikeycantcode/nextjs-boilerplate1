@@ -88,7 +88,7 @@ const Dashboard = () => {
     return (
         <div className="flex flex-col h-screen">
             <div className="flex flex-row h-1/6 justify-around py-10">
-                <div className="w-1/4 bg-zinc-50 rounded-xl shadow-lg p-4 z-10 hover:scale-105 transition-transform duration-300" id="Getstarted"></div>
+                <div className="w-1/5 bg-zinc-50 rounded-xl shadow-lg p-4 z-10 hover:scale-105 transition-transform duration-300" id="Getstarted"></div>
                 <div className="w-1/4 bg-zinc-50 rounded-xl shadow-lg p-4 z-10 hover:scale-105 transition-transform duration-300"></div>
                 <CurrentTierContent /> {/* Include the CurrentTierContent component here */}
             </div>
